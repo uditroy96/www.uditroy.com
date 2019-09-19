@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.background{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img.jpg);
+	width:100%;
+	height:100%;
+	background-size :cover;
+	background-position: center;
+	position: relative;
+	overflow-y: auto;
+}
+
+.nav {
+	width: 360px;
+	height: auto;
+	position: absolute;
+	top: 10%;
+	left: 0%;
+}
+.nav a{
+	text-decoration: none;
+	font-size: 30px;
+	font-family: verdana;
+	font-weight: bold;
+    height: 60px;
+    margin: 9px 0;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	line-height: 55px;
+	text-align: center;
+    transition: 300ms;
+}
+.a,.nav a:hover{width: 100%;
+	background-color: #fff;
+	color:#000;
+
+}
+
+.title{
+	position: absolute;
+	top: 60%;
+	left: 2%;
+	color: #fff;
+	
+}
+
+.title h3{
+	color: #000;
+	font-size: 25px;
+}
+.title h2{
+	font-family: verdana;
+	color: #fff;
+	font-size: 40px;
+}
+.button{
+	font-family:verdana;
+	font-size: 21px;
+	position: absolute;
+	top: 90%;
+	left: 14%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+	color: #000;
+	padding: 10px 30px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	transition: 600ms ease;
+}
+.btn:hover{color: #fff;
+	background-color: #fff;
+	color: #000;
+
+}
+.a{
+	width: 95%;
+}
+.b{width: 85%;}
+.c{width: 70%;}
+.d{
+	width: 90%;
+}
+.aboutus {
+	font-size: 20px;
+	position: absolute;
+margin-left: 40%;
+margin-top: 10%;
+font-family: verdana;
+color: #fff;
+}
+.contact{
+
+	position: absolute;
+	padding: 0 60px;
+	top :180px;
+	right: 300px;
+    color: white;
+}
+.inputtext{
+	width: 125%;
+	border-radius: 3%;
+	height:30px;
+	border: 3px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+}
+
+.textmsg{
+	width: 125%;
+	border-radius: 3%;
+	height: 79px;
+	border: 3px solid black;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+}
+.submitbutton{
+	width: 140px;
+	height: 50px;
+	margin-top: 30px;
+	font-size: 25px;
+border-radius: 3px;
+float: left;
+background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	padding: 10px 30px;
+	border: 1px solid #000;
+	transition: 600ms ease;
+
+}
+.submitbutton:hover{
+	color:white;
+	background-color: black;}
+.gallery{
+	position: absolute;
+	left:590px;
+	top: 50px;
+	color: white;
+	padding: 2 200px;
+}
+.gallery.image{
+	width:35%;
+	margin: 5%;
+
+}
+.image img{
+	width: 25%;
+	margin: 10px;
+	-webkit-transition: all ease 0.5s;
+	transform: scale(1);
+    -webkit-transform:scale(1);
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
