@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,12 +30,12 @@
 		<!--Contact Page-->
 	<div class="contact">
 		<form action="contact.php" method="post">
-		<input type="text" name="text" class="inputtext" value=""placeholder="Enter your First name" required="/"><br>
-		<input type="text" name="text" class="inputtext" value="" placeholder="Enter your Last name" required="/"><br>
-		<input type="text" name="text" class="inputtext" value="" placeholder="Enter your E-mail" required="/"><br>
-		<input type="text" name="text" class="inputtext" value="" placeholder="Enter your Phone No." required="/"><br>
-		<textarea class="textmsg" placeholder="Your messages....!!!" ></textarea><br>
-		<input type="button" name="button" class="submitbutton" value="Submit">
+		<input type="text" name="fname" class="inputtext" value=""placeholder="Enter your First name" required="/"><br>
+		<input type="text" name="lname" class="inputtext" value="" placeholder="Enter your Last name" required="/"><br>
+		<input type="text" name="email" class="inputtext" value="" placeholder="Enter your E-mail" required="/"><br>
+		<input type="text" name="number" class="inputtext" value="" placeholder="Enter your Phone No." required="/"><br>
+		<textarea class="textmsg" name="message" placeholder="Your messages....!!!" ></textarea><br>
+		<input type="submit" name="button" class="submitbutton" value="Submit">
 	</div>
 
 	</form>
@@ -45,20 +47,19 @@
 </html>
 
 <?php
-if(isset($POST['fname']) && isset($POST['lname']) && isset($POST['email'])&& isset($POST['number']) && isset($POST['message']));{
-	if(!empty($POST['fname']) && !empty($POST['lname']) && !empty($POST['email'])&& !empty($POST['number']) && !empty($POST['message']));{
+	if(!empty($_POST["email"])){
 
-$fname=$_POST['fname'];
-$lname=$_POST['lname'];
-$email=$POST['email'];
-$phone_number=$POST['phone number'];
-$message=$POST['message'];
+$fname=$_POST["fname"];
+$lname=$_POST["lname"];
+$email=$_POST["email"];
+$phone_number=$_POST["number"];
+$message=$_POST["message"];
 
 if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
 	echo'kindly provide Valid Email';
 }  else {
 	$body=$fname."\n".$lname."\n".$email."\n".$phone_number."\n".$message;
-	if mail(('udit.roy.9563@gmail.com','Website Response',$body,'From: ..........com')){
+	if(mail('udit.roy.9563@gmail.com','Website Response',$body,'Client')){
 	echo'Thanks for contacting us.';
 } else{
 	echo 'There is a Problem in sending mail';
@@ -69,16 +70,7 @@ if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
 } else {
 	echo'All field are required';
 }
-  
-
- }  else{
-	echo'Not Ok'
-}
 
 
 ?>
-
-
-<!---html code--->
-
 
