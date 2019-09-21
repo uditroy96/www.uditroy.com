@@ -69,9 +69,9 @@ html,body{
 	transform: translate(-50%,-50%);
 }
 .btn{
-	color: #000;
-	padding: 10px 30px;
-	border: 1px solid #fff;
+	color: #fff;
+	padding: 20px 30px;
+	border: 2px solid #fff;
 	text-decoration: none;
 	transition: 600ms ease;
 }
@@ -169,7 +169,7 @@ background-color: rgba(0,0,0,0.3);
  
   
   /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1090px) {
    .background{
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img.jpg);
 	width:100%;
@@ -183,7 +183,7 @@ background-color: rgba(0,0,0,0.3);
 
     .nav a{
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 25px;
 	font-family: verdana;
 	font-weight: bold;
     height: 60px;
@@ -269,20 +269,21 @@ font-weight: bold;
     	width: 100%;
     }
     .nav{ width:90%; margin:0; border:none; 
-    	margin-top: -12%;}
+    	margin-top: -20%;}
 
 
     .nav a{
+
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 15px;
 	font-family: verdana;
 	font-weight: bold;
-    height: 50px;
-    margin: 6px 0;
+    height: 40px;
+    margin: 1px 0;
 	display: inline-block;
 	background-color: black;
 	color: white;
-	line-height: 50px;
+	line-height: 40px;
 	text-align: center;
     transition: 300ms;
 
@@ -294,13 +295,13 @@ font-weight: bold;
 
 .title{
 	position: absolute;
-	top: 73%;
+	top: 75%;
 	left: 2%;
 	color: #fff;
 }
 .title h3{
 	color: #fff;
-	font-size: 150%;
+	font-size: 100%;
 }
 
 .gallery{
@@ -325,23 +326,26 @@ font-weight: bold;
 	font-family: verdana;
 	font-weight: bold;
 	color: #fff;
-	font-size: 130%;
+	font-size: 100%;
 }
 .button{
 	font-family:verdana;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: bold;
 	position: absolute;
 	top: 95%;
-	left: 43%;
-	transform: translate(-35%,-35%);
-}
+	left: 40%;
+	transform: translate(-50%,-50%);
+	
+}	.btn{ padding: 15px 10px;
+
+	}
 
     .aboutus {
 	font-size: 67%;
 	position: absolute;
 margin-left: 6%;
-margin-top: 48%;
+margin-top: 58%;
 font-family: verdana;
 color: #fff;
 }
