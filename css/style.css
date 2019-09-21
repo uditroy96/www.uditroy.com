@@ -169,7 +169,7 @@ background-color: rgba(0,0,0,0.3);
  
   
   /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 959px) {
    .background{
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img.jpg);
 	width:100%;
@@ -224,27 +224,38 @@ background-color: rgba(0,0,0,0.3);
 	width: 40%;
 }
 
+
+.image img{
+	width: 29%;
+	margin: 5px;
+	-webkit-transition: all ease 0.5s;
+	transform: scale(1);
+    -webkit-transform:scale(1);
+}
  .aboutus {
-	font-size: 20px;
+	font-size: 14px;
 	position: absolute;
-margin-left: 48%;
+margin-left: 37%;
 margin-top: 7%;
 font-family: verdana;
 color: #fff;
+font-weight: bold;
 }
 .title h2{
 	font-family: verdana;
 	color: #fff;
 	font-size: 40px;
+	font-weight: bold;
 }
 .title h3{
-	color: #000;
+	color: #fff;
 	font-size: 25px;
+	font-weight: bold;
 }
 }
 
 /* Media Queries: Tabled Portrait */
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 640px) {
     .background{
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img.jpg);
 	width:100%;
@@ -257,16 +268,17 @@ color: #fff;
     img{
     	width: 100%;
     }
-    .nav{ width:35%; margin:0; border:none; }
+    .nav{ width:90%; margin:0; border:none; 
+    	margin-top: -12%;}
 
 
     .nav a{
 	text-decoration: none;
-	font-size: 8px;
+	font-size: 20px;
 	font-family: verdana;
 	font-weight: bold;
-    height: 60px;
-    margin: 9px 0;
+    height: 50px;
+    margin: 6px 0;
 	display: inline-block;
 	background-color: black;
 	color: white;
@@ -282,47 +294,54 @@ color: #fff;
 
 .title{
 	position: absolute;
-	top: 60%;
+	top: 73%;
 	left: 2%;
 	color: #fff;
 }
 .title h3{
-	color: #000;
-	font-size: 15px;
+	color: #fff;
+	font-size: 150%;
 }
 
 .gallery{
 	position: absolute;
-	left:300px;
-	top: 30px;
+	left:60px;
+	top: 300px;
 	color: white;
 	padding: 2 200px;
-	width: 30%;
+	size: 50%;
+	width: 77%;
+	
 }
-.gallery.image{
-	width:45%;
-	margin: 4%;
 
+.image img{
+	width: 15%;
+	margin: 5px;
+	-webkit-transition: all ease 0.5s;
+	transform: scale(1);
+    -webkit-transform:scale(1);
 }
 .title h2{
 	font-family: verdana;
+	font-weight: bold;
 	color: #fff;
-	font-size: 20px;
+	font-size: 130%;
 }
 .button{
 	font-family:verdana;
-	font-size: 9px;
+	font-size: 16px;
+	font-weight: bold;
 	position: absolute;
-	top: 90%;
-	left: 40%;
-	transform: translate(-70%,-70%);
+	top: 95%;
+	left: 43%;
+	transform: translate(-35%,-35%);
 }
 
     .aboutus {
-	font-size: 80%;
+	font-size: 67%;
 	position: absolute;
-margin-left: 60%;
-margin-top: 8%;
+margin-left: 6%;
+margin-top: 48%;
 font-family: verdana;
 color: #fff;
 }
