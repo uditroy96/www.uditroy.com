@@ -318,13 +318,13 @@ html,body{
 }
 .title h3{
 	color: #fff;
-	font-size: 100%;
+	font-size: 90%;
 }
 
 .gallery{
 	position: absolute;
 	left:60px;
-	top: 300px;
+	top: 280px;
 	color: white;
 	padding: 2 200px;
 	size: 50%;
@@ -333,7 +333,7 @@ html,body{
 }
 
 .image img{
-	width: 15%;
+	width: 20%;
 	margin: 5px;
 	-webkit-transition: all ease 0.5s;
 	transform: scale(1);
@@ -350,11 +350,11 @@ html,body{
 	font-size: 10px;
 	font-weight: bold;
 	position: absolute;
-	top: 95%;
+	top: 98%;
 	left: 40%;
 	transform: translate(-50%,-50%);
 	
-}	.btn{ padding: 15px 10px;
+}	.btn{ padding: 8px 10px;
 
 	}
 
@@ -362,7 +362,7 @@ html,body{
 	font-size: 67%;
 	position: absolute;
 margin-left: 6%;
-margin-top: 58%;
+margin-top: 50%;
 font-family: verdana;
 color: #fff;
 }
