@@ -323,18 +323,17 @@ html,body{
 
 .gallery{
 	position: absolute;
-	left:55px;
+	left:20px;
 	top: 220px;
 	color: white;
 	padding: 2 200px;
-	size: 50%;
-	width: 77%;
+	width: 100%;
 	
 }
 
 .image img{
 	width: 20%;
-	margin: 5px;
+	margin: 4px;
 	-webkit-transition: all ease 0.5s;
 	transform: scale(1);
     -webkit-transform:scale(1);
